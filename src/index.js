@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import './index.css';
+// import App from './App';
+// import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(elemento,lugardonde insertar elemento);
+// SE TRAE EL DIV CON CLASE ROORT DE PUBLIC/index.HTML
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// const elemento=React.createElement(componente,propiedades,hijos)
+// SE CREA EL ELEMENTO
+// const elemento=React.createElement("h1",{className:"saludo"},"hola mundo")
+// SE RENDERIZA EN EL DOM
+
+const root=document.getElementById("root");
+ReactDOM.render(<App />,root);
+
+
+
